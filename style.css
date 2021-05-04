@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  max-height: 100vh;
+}
+
+section{
+  width: 80vw;
+  max-width: 900px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #d13ca4dc; */
+  background-color: rgba(230, 230, 224, 0.808);
+  border-radius: 1%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+article{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  max-width: 550px;
+  height: 350px;
+  color: rgba(41, 35, 35, 0.8);
+  margin: 4rem 0;
+ 
+  border-radius: 1%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+  background:#ffffff9f;
+
+  
+  /* padding: 0.3rem 0; */
+}
+
+.img{
+  /* border: solid 2px green; */
+  margin-left: 3rem;
+}
+
+img{
+  display: block;
+  width: 130px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.info{
+ /* border: solid 2px green; */
+ margin-left: 2rem;
+ height: 280px;
+ width: 250px;
+}
+
+.underline{
+  width: 85px;
+  height: 3px;
+  border-bottom: dotted 2px rgb(56, 209, 56);
+  /* background: green; */
+}
+
+.info h4{
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.info p{
+  margin-top: 6rem;
+  font-weight: 600;
+}
+
+.btn{
+  display: block;
+  background: rgb(56, 209, 56);
+  border-radius: 50%;
+ 
+}
+
+.btn-prev{
+  margin-right: 2rem;
+}
+
+.btn-next{
+  margin-left: 2rem;
+}
+
+.btn i{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.5rem;
+}
+
+
+@media screen and (max-width:850px) {
+  section{
+    max-width: 750px;
+    width: 100%;
+
+  }
+  article{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+
+  .img{
+    margin-top: 1rem;
+    margin-left: -1rem;
+  }
+   
+  img{
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .underline{
+    margin: 0 auto;
+  }
+
+
+  .info{
+    margin: 1rem 0;
+  }
+
+  .info h3{
+    text-align: center;
+  }
+
+  .info h4{
+    text-align:center;
+  }
+
+  .info p{
+    margin: 1rem;
+    font-size: 0.843rem;
+    text-align: center;
+  }
+}
